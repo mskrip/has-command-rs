@@ -46,7 +46,7 @@ pub fn has_command(attr: TokenStream, input: TokenStream) -> TokenStream {
             TokenTree::Ident(id) => {
                 command += &id.to_string();
             },
-            TokenTree::Punct(a) if a.to_string() != "," => {
+            TokenTree::Punct(ref a) if a.to_string() != "," => {
                 command += &a.to_string();
             },
             o => {
