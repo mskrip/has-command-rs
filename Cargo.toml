@@ -1,9 +1,13 @@
 [package]
 name = "has_command"
+description = "Allows checking if host machine supports a given command"
 version = "0.1.0"
 license = "MIT"
 authors = ["Marián Skrip <marian.skripp@gmail.com>"]
 edition = "2018"
+readme = "README.md"
+repository = "https://github.com/mskrip/has-command-rs/"
+
 
 [lib]
 proc-macro = true
